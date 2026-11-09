@@ -1,6 +1,10 @@
 import type { BedrockRuntimeClientConfig } from '@aws-sdk/client-bedrock-runtime';
 import { BedrockRuntimeClient } from '@aws-sdk/client-bedrock-runtime';
-import { fromIni, fromTemporaryCredentials, fromNodeProviderChain } from '@aws-sdk/credential-providers';
+import {
+	fromIni,
+	fromTemporaryCredentials,
+	fromNodeProviderChain,
+} from '@aws-sdk/credential-providers';
 import { ChatBedrockConverse } from '@langchain/aws';
 import { NodeHttpHandler } from '@smithy/node-http-handler';
 import { getNodeProxyAgent } from '@utils/httpProxyAgent';
